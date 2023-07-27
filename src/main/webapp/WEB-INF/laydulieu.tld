@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+	<tlib-version>1.0</tlib-version>
+	<short-name>loaddata</short-name>
+	<uri>/WEB-INF/laydulieu</uri>
+	<function>
+		<name>findByIdsp</name>
+		<function-class>com.fpltn.dao.sanphamDao</function-class>
+		<function-signature>com.fpltn.entities.Sanpham findByIdsp(int)</function-signature>
+	</function>
+	<function>
+		<name>findByIdusers</name>
+		<function-class>com.fpltn.dao.usersDao</function-class>
+		<function-signature>com.fpltn.entities.Users findByIduser(int)</function-signature>
+	</function>
+	<function>
+		<name>getAllSanPham</name>
+		<function-class>com.fpltn.dao.sanphamDao</function-class>
+		<function-signature>java.util.List getSanPham()</function-signature>
+	</function>
+	<function>
+		<name>getAllUsers</name>
+		<function-class>com.fpltn.dao.usersDao</function-class>
+		<function-signature>java.util.List getUsers()</function-signature>
+	</function>
+	
+	<function>
+		<name>getAllSanPhamPhanTrang</name>
+		<function-class>com.fpltn.dao.sanphamDao</function-class>
+		<function-signature>java.util.List getSanpham(int, int)</function-signature>
+	</function>
+	<function>
+		<name>demSanPham</name>
+		<function-class>com.fpltn.dao.sanphamDao</function-class>
+		<function-signature>Long DemSoLuongSanPham()</function-signature>
+	</function>
+	<function>
+		<name>timKiemsp</name>
+		<function-class>com.fpltn.dao.sanphamDao</function-class>
+		<function-signature>java.util.List timKiem(java.lang.String)</function-signature>
+	</function>
+</taglib>
